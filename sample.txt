@@ -1,0 +1,9 @@
+Your tasks:
+- Analysis of secret projects
+- Writing documents about secret projects
+
+Required knowledge:
+  • Basic algorithms 
+  • Advanced level jQuery, JavaScript (ExtJS), AJAX, HTML, XML
+  • Vim and Emacs
+  • English
