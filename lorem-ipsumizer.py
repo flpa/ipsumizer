@@ -1,4 +1,4 @@
 from collections import deque
 
 dek = deque(open("lorem.txt").read().split(' '), 10)
-print dek.popLeft()
+print dek.popleft()
