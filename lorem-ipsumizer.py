@@ -11,9 +11,9 @@ for char in sys.stdin.read():
         loremChar = lorems.popleft()
         lorems.append(loremChar)
         if char.isupper():
-            loremChar.toUpper()
+            loremChar.upper()
         else:
-            loremChar.toLower()
+            loremChar.lower()
         char = loremChar
 
     sys.stdout.write(char)
