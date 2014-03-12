@@ -4,13 +4,20 @@ from collections import deque
 import sys
 
 
+lorems = deque(open("lorem.txt").read().replace(' ', ''))
+
 for char in sys.stdin.read():
+    if char.isalpha():
+        loremChar = lorems.popleft()
+        lorems.append(loremChar)
+        if char.isupper():
+            loremChar.toUpper()
+        else:
+            loremChar.toLower()
+        char = loremChar
+
     sys.stdout.write(char)
 
-# dek = deque(open("lorem.txt").read().replace(' ', ''))
-
-# for char in dek:
-#     print "'"+char+"'"
 
 
 
