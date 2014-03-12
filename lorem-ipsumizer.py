@@ -14,10 +14,9 @@ for char in codecs.getreader("utf-8")(sys.stdin).read():
         loremChar = lorems.popleft()
         lorems.append(loremChar)
         if char.isupper():
-            loremChar.upper()
+            char = loremChar.upper()
         else:
-            loremChar.lower()
-        char = loremChar
+            char = loremChar.lower()
 
     sys.stdout.write(char)
 
